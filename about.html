@@ -1,0 +1,471 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABOUT - Zgripsorum</title>
+</head>
+
+<style>
+  html * {
+    font-family: Calisto MT !important;
+  }
+
+  body {
+    background-image: url("winter blur2.png");
+    background-repeat: space;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .header {
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.45);
+    background-image: url("Untitled-1.png");
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: center;
+  }
+
+  .nav {
+    background: rgba(0, 0, 0, 0.7);
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav li {
+
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .main {
+    color: white;
+    float: center;
+    width: 58%;
+    padding: 0 100px;
+    margin-top: 7px;
+  }
+
+  .right {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    float: right;
+    width: 25%;
+    padding: 5px;
+    margin-top: 7px;
+    text-align: center;
+  }
+
+  .audiocontrols {
+    margin-top: 15px;
+    opacity: 0.9;
+  }
+
+  .line {
+    display: inline;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .articol {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    width: 100%;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .merchpic {
+    width: 100%;
+    height: 60%;
+    content: url("battlecry fata copy.png");
+  }
+
+  .merchpic:hover {
+    width: 100%;
+    height: 60%;
+    content: url("battlecry spate copy.png");
+  }
+
+
+  .row>.column {
+    width: 30%;
+    padding: 10 10px;
+  }
+
+  .row {
+    margin-left: 5%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+  }
+
+  .column {
+    float: left;
+    width: 33%;
+
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    max-width: 1200px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: purple;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-style: Calisto MT;
+  }
+
+  img {
+    margin-bottom: 0px;
+    object-fit: contain;
+  }
+
+
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .titlu {
+    text-align: center;
+    padding: 25px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <div class="header">
+  </div>
+
+
+  <ul class="nav">
+    <li><a href="index.html" target="_self">Home</a></li>
+    <li><a href="release.html" target="_self">Releases</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+
+  <div class="right">
+    <h2>Our latest release</h2>
+    <img src="https://f4.bcbits.com/img/a2921074216_2.jpg" width="250px" height="250px">
+    <div class="audiocontrols">
+      <audio controls>
+        <source src="Zgripsorum - Battle Cry.mp3" type="audio/ogg">
+        <source src="Zgripsorum - Battle Cry.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <h2>Merchandise</h2>
+    <div class="merchpic"></div>
+    <p>This is just a preview, for more T-Shirts click <a href="shop.html">here</a>.
+  </div>
+
+  <div class="main">
+    <h2 align="center">About Us</h2>
+    <article class="articol">
+      Zgripsorum is a Romanian Melodic Death Metal band formed in 2019.<br>
+      Fusing melodic and symphonic elements with the rawness of old school Death Metal, we create a beautifully chaotic new realm.
+      <br>
+      <br>
+      We started out as a 2-men band but we quickly managed to find a drummer. The beginning was quite slow, as we wrapped our heads around too many songs at the same time. In the summer of 2019 we posted a short demo of a song of ours on our
+      Instagram page. It became popular quickly between the 100 followers we had at that time and we got really excited. Sadly, the song was never to be finished, because of the lack of ideas.
+      <br>
+      <br>
+      We then started composing our first single, "Gai'don", releasing a demo for it in April 2020. The success was immense, so we worked and released the full version with our new vocalist in July.
+      <br>
+      <br>
+      <h3>Members:</h3>
+      -Rares Andreescu (Rhythm Guitar)<br>
+      -Catalin Chivu (Bass Guitar/Clean and Backing Vocals)<br>
+      -Matei Cochintu (Main Vocals)<br>
+      -Octav Oprinoiu (Lead Guitar)<br>
+
+      <br>
+      <h3>*Fun facts</h3>
+      <ul>
+        <li>"Gai'don" was originally named "Elegy of Shadows". This was before we even thought about any lyric.</li>
+        <li>The title "Exile" is actually inspired by the game "Path of Exile", a game with a similar story to our lyrics.</li>
+        <li>Because of the very long writing session of our first single, at the time we released it we already hated it.</li>
+        <li>(<b>Sad Fact</b>) Given the current pandemic, we were able to rehearse twice in a year.</li>
+
+
+    </article>
+    <br>
+    <div class="titlu">
+      <hr>
+      <h2>Photos</h3>
+        <hr>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="column">
+        <img src="battlecry.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="exile.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="gaidon.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Header Zgripsorum.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="betl.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="exile yt.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Instrumental.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="octares.jpg" style="width:100%" onclick="openModal();currentslide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="winter stuff.jpg" style="width:100%" onclick="openModal();currentslide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="logo.png" style="width:100%" onclick="openModal();currentslide(10)" class="hover-shadow cursor">
+      </div>
+
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+
+          <img src="battlecry.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+          <img src="exile.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+          <img src="gaidon.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="Header Zgripsorum.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="betl.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="exile yt.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="Instrumental.png" style="width:100%">
+        </div>
+        <div class="mySlides">
+
+          <img src="octares.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+
+          <img src="winter stuff.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+
+          <img src="logo.png" style="width:100%">
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+</body>
+
+</html>

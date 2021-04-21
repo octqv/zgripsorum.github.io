@@ -1,0 +1,191 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="Cascade.css">
+    <title>NEWS - Zgripsorum</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+  html *
+{
+   font-family:Calisto MT !important;
+}
+  body{
+  background-image: url("winter blur2.png");
+  background-repeat: space;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  .header {
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.45);
+  background-image: url("Untitled-1.png");
+  background-repeat: no-repeat;
+  background-size: 24%;
+  background-position: center;
+  }
+  .nav {
+
+  background: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top:0;
+  }
+  .nav li {
+
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  }
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  }
+  .active {
+ background: rgba(255, 255, 255, 0.3);
+  }
+
+  .main {
+    color: white;
+    float:right;
+    width:50%;
+    padding:0 20px;
+    margin-top: 7px;
+  }
+  .menu {
+  float:right;
+  width:20%;
+  text-align:center;
+  color: white;
+}
+.menu a {
+  background: rgba(0, 0, 0, 0.7);
+  padding:6px;
+  margin-top:7px;
+  display:block;
+  width:85%;
+  color:white;
+  float:right
+}
+menu a:hover {
+  background-color:#4713C0;
+}
+.active {
+background-color: #4CAF50;
+}
+
+.left {
+  color:white;
+  background: rgba(0, 0, 0, 0.7);
+  float:left;
+  width:25%;
+  padding:5px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.audiocontrols
+{
+margin-top:15px;
+opacity: 0.9;
+}
+
+.articol
+{
+background: rgba(0, 0, 0, 0.7);
+padding:5px;
+width:100%;
+border: 6px solid rgba(0,0,0,0.1);
+}
+
+.line{
+  display: inline;
+margin-top: 14px;
+margin-bottom: 0px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+  </style>
+
+  <body>
+
+    <div class="header">
+</div>
+    <ul class="nav">
+      <li><a href="index.html" target="_self">Home</a></li>
+      <li><a href="release.html" target="_self">Releases</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+
+    <div style="overflow:auto">
+  <div class="menu">
+    <h2 align="center">Follow Zgripsorum</h2>
+    <a title="Spotify" href="spotify:artist:6htb2WZrkaO18av9uxmjpC"><img src="spotify-logo-png-7053.png" width="50px" height="50px"></a>
+    <a title="Bandcamp" href="https://zgripsorum.bandcamp.com"><img src="pngfind.com-bandcamp-logo-png-2353374.png" width="50px" height="50px"></a>
+    <a title="YouTube" href="https://www.youtube.com/channel/UCa-i0pW5Mj1VU-EfKv4JjIw"><img src="pngwing.com.png" width="70px" height="55px"</a>
+    <a title="Instagram" href="https://www.instagram.com/zgripsorum/"><img src="580b57fcd9996e24bc43c521.png" width="50px" height="50px"</a>
+    <a title="Discord" href="https://discord.gg/ZjdvSb7J"><img src="iconfinder_91_Discord_logo_logos_4373196.png" width="50px" height="50px"></a>
+  </div>
+
+
+  <div class="left">
+<h2>Our latest release</h2>
+<img src="https://f4.bcbits.com/img/a2921074216_2.jpg" width="250px" height="250px">
+  <div class="audiocontrols" >
+<audio controls>
+  <source src="Zgripsorum - Battle Cry.mp3" type="audio/ogg">
+  <source src="Zgripsorum - Battle Cry.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="line">
+  <hr>
+</div>
+    <h2>Merchandise</h2>
+    <image src="photo5796461994549818989.jpg" width="300px" height="400px">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+
+  <div class="main">
+    <h2 align="center">NEWS</h2>
+<article class="articol">
+<h3>Titlu</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</article>
+  </div>
+
+  </body>
+</html>

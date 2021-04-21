@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zgripsorum - Gai'don</title>
+  </head>
+
+  <style>
+
+  {
+     font-family:Calisto MT !important;
+  }
+
+  body{
+  background-image: url("winter blur2.png");
+  background-repeat: space;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+   .header {
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.45);
+  background-image: url("Untitled-1.png");
+  background-repeat: no-repeat;
+  background-size: 24%;
+  background-position: center;
+  }
+  .nav {
+  background: rgba(0, 0, 0, 0.85);
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top:0;
+  }
+  .nav li {
+
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  }
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+ li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  }
+  .main {
+    color: white;
+    width:50%;
+    padding:0 20px;
+    margin: auto;
+    margin-top: 7px;
+  }
+
+  .articol
+  {
+    text-align: justify;
+  background: rgba(0, 0, 0, 0.7);
+  padding:10px;
+  width:100%;
+  border: 6px solid rgba(0,0,0,0.1);
+  }
+  .audiocontrols
+  {
+  margin-top:15px;
+  opacity: 0.9;
+  }
+
+  .gaidon{
+  display: inline-block;
+  float: right;
+  border: 6px solid rgba(0,0,0,0.7);
+  margin-left: 7px;
+
+  }
+
+  .link
+  {
+    color:red;
+  }
+  </style>
+
+  <body>
+    <div class="header">
+</div>
+
+
+    <ul class="nav">
+      <li><a href="index.html" target="_self">Home</a></li>
+      <li><a href="release.html" target="_self">Releases</a></li>
+      <li><a href="about.html" target="_self">About</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#discord">Contact Us</a></li>
+    </ul>
+
+    <div class="main">
+      <article class="articol">
+        <div class="gaidon">
+      <img src="a1002643366_16.jpg" height="40%">
+    </div>
+      <h1>Gai'don</h1>
+      <h3>by Zgripsorum</h3>
+      <p> </p>
+      <h4 >Support us by buying this digital track <a class="link" href="https://zgripsorum.bandcamp.com/track/gaidon">here</a>.</h4>
+      <div class="audiocontrols" >
+    <audio controls>
+      <source src="Zgripsorum - Gai'don.mp3" type="audio/ogg">
+      <source src="Zgripsorum - Gai'don.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+      <p style="margin: auto">In the midst of the chaos that is the world this year, we cry you a song of battle, hope and victory.
+      Unlike our last release, "Battle Cry" is meant to shed some light during these dark times.</p>
+<h3>LYRICS</h3>
+<p>  </p>
+In the midst of the chaos that is the world this year, we cry you a song of battle, hope and victory.
+Unlike our last release, "Battle Cry" is meant to shed some light during these dark times.
+<br>
+The fallen men, the repressed, let them fade away, let us take over
+All the shattered shields, the broken swords, the elder knighthood order
+We know they lost but we will fight no matter what the cost
+Our foes will fall when they'll hear the battle horn
+
+And in spite of death, we rise
+While we fight, our kind, prevails, saviours, resurrect the light
+And in spite of death, we rise
+While we fight, our kind, prevails, saviours, we will bring the light
+
+When they will see us, they'll now we are BORN TO FIGHT
+And when we're gathered, they'll hear our BATTLE CRY
+The enemies, not ready to die will fear our MIGHTY PRIDE
+And when we will prevail, they'll hear our BATTLE CRY
+
+And in spite of death, we rise
+While we fight, our kind, prevails , saviours, resurrect the light
+And in spite of death, we rise
+While we fight, our kind, prevails , saviours, we will bring the light
+
+They'll feel our pain a thousand times
+
+New order shall arrive
+We left our realm behind
+Beneath the stars we’ll ride
+With all the gods on our side
+
+When they will see us, they'll now we are BORN TO FIGHT
+And when we're gathered, they'll hear our BATTLE CRY
+The enemies, not ready to die will fear our MIGHTY PRIDE
+And when we will prevail, they'll hear our BATTLE CRY
+credits
+
+</p>
+      </article>
+
+    </div>
+
+  </body>
+
+
+</html>
